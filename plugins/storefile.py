@@ -105,9 +105,13 @@ async def storefile_channel(c, m):
     bot = await c.get_me()
     url = f"https://t.me/ArkFileStoreBot?start={m.chat.id}_{m.message_id}" if not DB_CHANNEL_ID else f"https://t.me/ArkFileStoreBot?start={m.chat.id}_{msg.message_id}"
     txt = urllib.parse.quote(text.replace('--', ''))
-    
+    share_url = f"tg://share?url={txt}File%20Link%20👉%20{url}"
+
     # making buttons
-    buttons = [InlineKeyboardButton(text="𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙻𝚒𝚗𝚔 📥 🔗", url=url),]
+    buttons = [[
+        InlineKeyboardButton(text="Download Link 🔗", url=url),
+        InlineKeyboardButton(text="Share Link 👤", url=share_url)
+    ]]
 
     # Editing and adding the buttons
     await m.edit_reply_markup(InlineKeyboardMarkup(buttons))
