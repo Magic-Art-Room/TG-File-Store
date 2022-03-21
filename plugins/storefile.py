@@ -108,10 +108,9 @@ async def storefile_channel(c, m):
     share_url = f"tg://share?url={txt}File%20Link%20👉%20{url}"
 
     # making buttons
-    buttons = [[
-        InlineKeyboardButton(text="Open Url 🔗", url=url),
-        InlineKeyboardButton(text="Share Link 👤", url=share_url)
-    ]]
+    buttons = [
+        InlineKeyboardButton(text="𝙳𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝙻𝚒𝚗𝚔 📥 🔗", url=url),
+    ]
 
     # Editing and adding the buttons
     await m.edit_reply_markup(InlineKeyboardMarkup(buttons))
