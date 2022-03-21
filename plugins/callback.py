@@ -59,19 +59,15 @@ async def about_cb(c, m):
     # about text
     about_text = f"""--**My Details:**--
 
-🤖 𝐌𝐲 𝐍𝐚𝐦𝐞: {bot.mention(style='md')}
+🤖 𝐌𝐲 𝐍𝐚𝐦𝐞: [File Store Bot](https://t.me/ArkFileStoreBot)
     
 📝 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞: [Python 3](https://www.python.org/)
 
 🧰 𝐅𝐫𝐚𝐦𝐞𝐰𝐨𝐫𝐤: [Pyrogram](https://github.com/pyrogram/pyrogram)
 
-👨‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: {owner.mention(style='md')}
+👨‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: [Click Me](tg://settings)
 
-📢 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: [NS BOT UPDATES](https://t.me/Ns_bot_updates)
-
-👥 𝐆𝐫𝐨𝐮𝐩: [Ns BOT SUPPORT](https://t.me/Ns_Bot_supporters)
-
-🌐𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞: [Press Me 🥰](https://github.com/Ns-Bots/TG-File-Store)
+📢 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: [ArkBotz](https://t.me/ArkBotz)
 """
 
     # creating buttons
