@@ -104,7 +104,7 @@ async def storefile_channel(c, m):
     # creating urls
     bot = await c.get_me()
     url = f"https://t.me/ArkFileStoreBot?start={m.chat.id}_{m.message_id}" if not DB_CHANNEL_ID else f"https://t.me/ArkFileStoreBot?start={m.chat.id}_{msg.message_id}"
-    share_url = f"tg://share?url={txt}File%20Link%20👉%20{url}"
+    share_url = f"tg://share?url=File%20Link%20👉%20{url}"
 
     # making buttons
     buttons = [[
