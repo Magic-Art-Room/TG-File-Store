@@ -66,13 +66,7 @@ async def refresh_cb(c, m):
 
     if chat_id.startswith('-100'): #if file from channel
         channel = await c.get_chat(int(chat_id))
-        caption += "\n\n\n**--Uploader Details:--**\n\n"
-        caption += f"__📢 Channel Name:__ `{channel.title}`\n\n"
-        caption += f"__🗣 User Name:__ @{channel.username}\n\n" if channel.username else ""
-        caption += f"__👤 Channel Id:__ `{channel.id}`\n\n"
-        caption += f"__💬 DC ID:__ {channel.dc_id}\n\n" if channel.dc_id else ""
-        caption += f"__👁 Members Count:__ {channel.members_count}\n\n" if channel.members_count else ""
-
+        
     else: #if file not from channel
         user = await c.get_users(int(chat_id))
         caption += "\n\n\n**--Uploader Details:--**\n\n"
