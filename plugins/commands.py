@@ -33,7 +33,7 @@ async def start(c, m, cb=False):
 `You can store your Telegram Media for permanent Link!`
 
 
-**👲 Maintained By:** @ArkBotz
+**👲 Maintained By:** {@ArkBotz}
 """
 
     # Buttons
