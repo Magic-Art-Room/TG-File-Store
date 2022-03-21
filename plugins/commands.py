@@ -57,7 +57,8 @@ async def start(c, m, cb=False):
         caption = f"{msg.caption.markdown}\n\n\n" if msg.caption else ""
 
         if chat_id.startswith('-100'): #if file from channel
-            
+            channel = await c.get_chat(int(chat_id))
+    
         else: #if file not from channel
             user = await c.get_users(int(chat_id))
 
