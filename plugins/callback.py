@@ -68,6 +68,7 @@ async def about_cb(c, m):
 👨‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: [Click Me](tg://settings)
 
 📢 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: [ArkBotz](https://t.me/ArkBotz)
+"""
 
     # creating buttons
     buttons = [
